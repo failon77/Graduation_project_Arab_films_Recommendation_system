@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="{{url_for('static',filename= 'style.css')}}">
+    <title>نظام توصية للأفلام العربية</title>
+</head>
+<body>
+
+    <header>
+       <a href="#" class="logo">نظام توصية للأفلام العربية</a>
+       <nav class="navigation">
+           <a href="#movies">الأفلام</a>
+           <a href="#about us">من نحن؟</a>
+           <a href="#contact">تواصل</a>
+       </nav>
+    </header>
+
+    <section class="main2">
+        <div>
+
+           <h2>{{ m }}<br></h2>
+           <h3>الفيلم مأخوذ عن قصة حقيقية حدثت في أواخر القرن التاسع عشر (1871). يتحدث الفيلم عن قبيلة يسميها «الحربات»، في صعيد مصر تعيش على سرقة وبيع الآثار الفرعونية. وعندما يموت شيخ القبيلة يرفض أولاده أمر سرقة الآثار فيقتل الأول على يد عمه بينما ينجح الثاني في إبلاغ بعثة الآثار عن مكان المقبرة التي تبيع قبيلته محتوياتها. أما القصة الأصلية فأبطالها أفراد من عائلة عبد الرسول ينجحون في اكتشاف ما بات يعرف بخبيئة مومياوات الدير البحري والتي ضمت مومياوات أعظم الآثار الفرعونية في مصر من مثل أحمس الأول وسيتي الأول ورعمسيس الثاني.</h3>
+            <a href="#movies" class="main-btn">نقترح عليك ايضا ان تشاهد</a>
+        </div>
+    </section>
+    <section class="poster" id="movies">
+
+             <div>
+                    <div class ="post">
+                    <div class ="icon">
+                    <i class="fa-solid fa-circle-play"></i>
+
+                    </div>
+                    <div class="info">
+                        <h3>{{ r1 }}</h3>
+
+                    </div>
+                    </div>
+             </div>
+             <div>
+                    <div class ="post">
+                    <div class ="icon">
+                    <i class="fa-solid fa-circle-play"></i>
+
+                    </div>
+                    <div class="info">
+                        <h3>{{ r2 }}</h3>
+
+                    </div>
+             </div>
+             </div>
+         </section>
+
+</body>
+</html>
